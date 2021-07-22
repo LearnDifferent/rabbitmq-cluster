@@ -1,4 +1,6 @@
-# 使用多个 Docker 容器在本地部署单机多实例 RabbitMQ 集群环境
+# 部署 RabbitMQ 集群
+
+**这里使用多个 Docker 容器在本地部署单机多实例 RabbitMQ 集群环境**
 
 启动三个节点，一个主节点，一个从节点。
 
@@ -69,7 +71,7 @@ exit
 
 因为 RabbitMQ 使用的语言是 Erlang，所以 RabbitMQ 集群的节点间相互的通信需要 Erlang Cookie 的认证（相当于节点间交换信息的秘钥）。
 
-> **Erlang Cookie 的位置： `/var/lib/rabbitmq/.erlang.cookie` **
+> Erlang Cookie 的位置： `/var/lib/rabbitmq/.erlang.cookie` 
 
 只要去集群中任意一个节点的 Erlang Cookie 所在的位置，将里面的内容拷贝。然后，去该集群的其他节点中，将拷贝的内容，覆盖（剪切）到该节点的 Erlang Cookie 中，就可以了。
 
@@ -85,7 +87,7 @@ exit
 
 ***
 
-# RabbitMQ 集群管理
+# 管理 RabbitMQ 集群
 
 下文摘抄自：[docker搭建RabbitMQ单机集群](https://www.jianshu.com/p/aa537ff043bc)
 
@@ -139,7 +141,7 @@ exit
 
 ## 集群重启顺序
 
-**集群重启的顺序是固定的，并且是相反的。**如下所述：
+**集群重启的顺序是固定的，并且是相反的。** 如下所述：
 
 - 启动顺序：磁盘节点 => 内存节点
 - 关闭顺序：内存节点 => 磁盘节点
