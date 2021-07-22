@@ -1,3 +1,5 @@
+此仓库相关内容已合并到 [RabbitMQ笔记.md](https://github.com/LearnDifferent/my-notes/blob/master/RabbitMQ%E7%AC%94%E8%AE%B0.md)
+
 # 部署 RabbitMQ 集群
 
 **这里使用多个 Docker 容器在本地部署单机多实例 RabbitMQ 集群环境**
