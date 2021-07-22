@@ -153,4 +153,3 @@ exit
 参考资料：
 
 - [官网教程：Clustering Guide](https://rabbitmq.com/clustering.html)
-- [RabbitMQ消息可靠投递和重复消费等问题解决方案](https://blog.csdn.net/qq_40837310/article/details/109033000)
